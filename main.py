@@ -10,19 +10,22 @@ def is_prime(n):
        if n % i == 0:
            return False
    return True
-#  '''
-# Returneaza produsul numerelor din lista lst.
-# '''
+
+
+'''
+Returneaza produsul numerelor din lista lst.
+'''
 def get_product(lst):
     p = 1
     for el in lst:
         p = p * el
     return p
-# '''
-# Returneaza CMMDC a doua numere x si y folosind primul algoritm.
-# '''
+
+
+'''
+Returneaza CMMDC a doua numere x si y folosind primul algoritm.
+'''
 def get_cmmdc_v1(x, y):
-    # codul vostru aici
     z = 0
     while y != 0:
         z = x % y
@@ -30,9 +33,10 @@ def get_cmmdc_v1(x, y):
         y = z
     return x
 
-# '''
-# Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
-# '''
+
+'''
+Returneaza CMMDC a doua numere x si y folosind al doilea algoritm.
+'''
 def get_cmmdc_v2(x, y):
     z = y
     if x < y:
